@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+
+  <head>
+
+        <!-- UNICODE UTF-8 -->
+        <meta charset=utf-8>
+
+        <!-- IE-EDGE Support -->
+        <meta http-equiv=X-UA-Compatible content="IE=edge">
+
+        <!-- Viewport -->
+        <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- Google Site Verification --->
+        <meta name=google-site-verification content="{{ $metaGoogleSiteVerification }}">
+
+        <!-- Basic SEO Meta Tags -->
+        <meta name="author" content="{{ $metaAuthor }}">
+        <meta name="image" content="{{ $metaImage }}">
+        <meta name="description" content="{{ $metaDescription }}">
+        <meta name="keywords" content="{{ $metaKeywords }}">
+        <meta name="robots" content="index, follow">
+
+        <!-- Phone Number Format Detection -->
+        <meta name=format-detection content="telephone=no">
+
+        <!-- Mobile Web App Capable -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="apple-mobile-web-app-title" content="DC-Covers">
+
+        <!-- Google Translate -->
+        <meta name=google content=notranslate>
+
+        <!-- Geo Position -->
+        <meta name=geo.region content=CO>
+        <meta name=geo.placename content=Bogot&aacute;>
+        <meta name=geo.position content=4.698699;-74.030875>
+        <meta name=ICBM content="4.698699, -74.030875">
+
+
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="{{ $metaSchemaName }}">
+        <meta itemprop="image" content="{{ $metaSchemaImage }}">
+        <meta itemprop="description" content="{{ $metaSchemaDescription }}">
+
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:card" content="">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+
+        <meta name="twitter:app:name:iphone" content="">
+        <meta name="twitter:app:id:iphone" content="">
+        <meta name="twitter:app:name:ipad" content="">
+        <meta name="twitter:app:id:ipad" content="">
+        <meta name="twitter:app:name:googleplay" content="">
+        <meta name="twitter:app:id:googleplay" content="">
+        <meta name="twitter:app:country" content="">
+
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+
+        <meta property="og:image" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:secure_url" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="" />
+        <meta property="og:image:height" content="" />
+        <meta property="og:image:alt" content="" />
+
+        <meta property="og:video" content="" />
+        <meta property="og:video:secure_url" content="" />
+        <meta property="og:video:type" content="" />
+        <meta property="og:video:width" content="" />
+        <meta property="og:video:height" content="" />
+
+        <!-- Icons & Favicons-->
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>img/icon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>img/icon/favicon-32x32.png">
+
+        <!-- Apple Touch Icon -->
+        <link rel="apple-touch-icon" sizes="60x60" href="<%= BASE_URL %>img/icon/apple-touch-icon/60x60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<%= BASE_URL %>img/icon/apple-touch-icon/76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<%= BASE_URL %>img/icon/apple-touch-icon/120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="<%= BASE_URL %>img/icon/apple-touch-icon/152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>img/icon/apple-touch-icon/180x180.png">
+
+        <!-- Mask Icon -->
+        <link rel="mask-icon" href="<%= BASE_URL %>img/icon/safari-pinned-tab.svg" color="#5bbad5">
+
+        <!-- MS App Tiles  -->
+        <meta name="msapplication-TileImage" content="link to the image in static folder">
+        <meta name="msapplication-TileColor" content="#000">
+
+        <title> Iterar Co | Company LTDA </title>
+
+        <!-- ---------------------------------------------------- -->
+        <!-- --  SEO PHP META TAGS                             -- -->
+        <!-- ---------------------------------------------------- -->
+        {!! SEO::generate(true) !!}
+        <!-- ---------------------------------------------------- -->
+
+      <link rel="manifest" href="./manifest.json" />
+
+      <noscript>
+          <link rel="stylesheet" href="noscript/noscript.css" />
+      </noscript>
+
+  </head>
+
+
+  <body>
+
+    @include('shared.noscript')
+
+    <div id="app">
+       <h1>APP </h1>
+    </div>
+
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>
