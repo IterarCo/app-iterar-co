@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link to="/home">Vue Home</router-link> |
       <router-link to="/about">Vue About</router-link>
-      <a href="/home">Laravel Home</a>
+      <a href="/home">VUE Laravel Home</a>
     </div>
     <router-view/>
   </div>
