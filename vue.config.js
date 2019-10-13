@@ -1,6 +1,6 @@
 module.exports = {
-    indexPath: 'index.blade.php',
-    outputDir : '../server-iterar-co/public/app',
+    indexPath: 'index.html',
+    outputDir : 'dist',
     publicPath: process.env.NODE_ENV === 'production'
       ? '/app'
       : '/',

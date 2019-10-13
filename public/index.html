@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 
   <head>
@@ -14,13 +14,13 @@
         <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <!-- Google Site Verification --->
-        <meta name=google-site-verification content="{{ $metaGoogleSiteVerification }}">
+        <meta name=google-site-verification content="">
 
         <!-- Basic SEO Meta Tags -->
-        <meta name="author" content="{{ $metaAuthor }}">
-        <meta name="image" content="{{ $metaImage }}">
-        <meta name="description" content="{{ $metaDescription }}">
-        <meta name="keywords" content="{{ $metaKeywords }}">
+        <meta name="author" content="">
+        <meta name="image" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
         <meta name="robots" content="index, follow">
 
         <!-- Phone Number Format Detection -->
@@ -43,9 +43,9 @@
 
 
         <!-- Schema.org for Google -->
-        <meta itemprop="name" content="{{ $metaSchemaName }}">
-        <meta itemprop="image" content="{{ $metaSchemaImage }}">
-        <meta itemprop="description" content="{{ $metaSchemaDescription }}">
+        <meta itemprop="name" content="">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
 
 
         <!-- Twitter -->
@@ -107,28 +107,37 @@
 
         <title> Iterar Co | Company LTDA </title>
 
+
         <!-- ---------------------------------------------------- -->
         <!-- --  SEO PHP META TAGS                             -- -->
         <!-- ---------------------------------------------------- -->
-        {!! SEO::generate(true) !!}
+        <meta env="prod" name="seo" lang="blade" value="{!! SEO::generate(true) !!}"/>
         <!-- ---------------------------------------------------- -->
 
-      <link rel="manifest" href="./manifest.json" />
 
-      <noscript>
-          <link rel="stylesheet" href="noscript/noscript.css" />
-      </noscript>
 
   </head>
 
 
   <body>
 
-    @include('shared.noscript')
 
-    <div id="app">
-       <h1>APP </h1>
-    </div>
+
+    <!-- ---------------------------------------------------- -->
+    <!-- --  NO SCRIPT PHP META TAGS                       -- -->
+    <!-- ---------------------------------------------------- -->
+    <meta env="prod" name="no-script" lang="blade" value="@include('shared.noscript')"/>
+    <!-- ---------------------------------------------------- -->
+
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- --  VUE APP BOOTSTRAP                             -- -->
+    <!-- ---------------------------------------------------- -->
+    <div id="app"></div>
+    <!-- ---------------------------------------------------- -->
+
+
 
 
     <!-- built files will be auto injected -->
